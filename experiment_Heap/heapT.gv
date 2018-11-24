@@ -1,0 +1,40 @@
+digraph heapT {
+fontname = "Microsoft YaHei"; labelloc = t; labeljust = l; rankdir = TB;
+label = "FinaT Heap";
+node [fontname = "Microsoft YaHei", color=darkgreen, shape=circle, height=.1];
+edge [fontname = "Microsoft YaHei", color=darkgreen, style=solid, arrowsize=0.7];
+node0[label="32749"];
+node1[label="32751"];
+node2[label="32755"];
+node3[label="32757"];
+node4[label="32762"];
+node5[label="32757"];
+node6[label="32756"];
+node7[label="32767"];
+node8[label="32763"];
+node9[label="32763"];
+node10[label="32764"];
+node11[label="32761"];
+node12[label="32761"];
+node13[label="32762"];
+node14[label="32758"];
+node0:sw -> node1;
+node0:se -> node2;
+node1:sw -> node3;
+node1:se -> node4;
+node2:sw -> node5;
+node2:se -> node6;
+node3:sw -> node7;
+node3:se -> node8;
+node4:sw -> node9;
+node4:se -> node10;
+node5:sw -> node11;
+node5:se -> node12;
+node6:sw -> node13;
+node6:se -> node14;
+node [fontname = "Microsoft YaHei", color=darkgreen, shape=record, height=.1];
+edge [fontname = "Microsoft YaHei", color=darkgreen, style=solid];
+struct [ label = "{value|address} |{|0} | {32749|1} | {32751|2} | {32755|3} | {32757|4} | {32762|5} | {32757|6} | {32756|7} | {32767|8} | {32763|9} | {32763|10} | {32764|11} | {32761|12} | {32761|13} | {32762|14} | {32758|15} "]; 
+struct:s -> node0 [color=white]; 
+}
+
